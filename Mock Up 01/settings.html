@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Settings</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container flex">
+    <!-- MAIN CONTENT AREA -->
+    <main>
+      <h1>Settings</h1>
+      <p>Manage your account preferences, security settings, and notifications.</p>
+      
+      <!-- Example of additional settings sections -->
+      <section style="margin-top: 2rem;">
+        <h2>Notifications</h2>
+        <p>Here you can enable or disable specific notifications.</p>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="notif-email">
+              <input type="checkbox" id="notif-email" />
+              Email Notifications
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="notif-sms">
+              <input type="checkbox" id="notif-sms" />
+              SMS Notifications
+            </label>
+          </div>
+          <button type="submit" class="button">Save Notification Settings</button>
+        </form>
+      </section>
+
+      <p style="margin-top: 2rem;">
+        <a href="Landing Page.html" class="button">Back to Landing Page</a>
+      </p>
+    </main>
+
+    <!-- SIDEBAR (e.g., Security Settings) -->
+    <aside class="sidebar">
+      <h2>Change Password</h2>
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="old-password">Old Password</label>
+          <input 
+            type="password" 
+            id="old-password" 
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="new-password">New Password</label>
+          <input 
+            type="password" 
+            id="new-password" 
+            class="form-control" 
+            required
+          />
+        </div>
+        <button type="submit" class="button">Update Password</button>
+      </form>
+    </aside>
+  </div>
+  
+</body>
+</html>

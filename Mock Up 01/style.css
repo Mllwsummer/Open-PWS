@@ -1,0 +1,107 @@
+/* ========================
+   style.css
+   ======================== */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #c7e3e6; /* Same light teal background */
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  /* Container for page content */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  /* Headers / Titles */
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Links */
+  a {
+    color: #0074b7;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Shared Form Styles */
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid #666;
+    border-radius: 20px;
+    font-size: 1rem;
+  }
+  
+  /* Buttons */
+  .button,
+  .login-btn {
+    background-color: #008c9a; /* teal-ish button color */
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    transition: background-color 0.2s ease;
+  }
+  .button:hover,
+  .login-btn:hover {
+    background-color: #006d78;
+  }
+  
+  /* Utility classes for layout */
+  .flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .sidebar {
+    width: 300px;
+    background: transparent;
+    margin-left: 2rem;
+  }
+  
+  /* Basic Responsiveness */
+  @media (max-width: 768px) {
+    .flex {
+      flex-direction: column;
+    }
+    .sidebar {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 2rem;
+    }
+  }
+  
